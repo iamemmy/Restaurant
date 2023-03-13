@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.section-one {
+    background-color: getColor(color06);
+    div {
+        div {
+            .bg-img-1 {
+                background: url(../media/Shrimp-meal.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-bottom: 0.1rem solid;
+                padding-bottom: 1.8rem;
+                 opacity: 0.5;
+
+                article {
+                    .intro {
+                        color:#9A0642;
+                        font-size: 1.6rem;
+                        padding: 4rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}   
+.section-two {
+    div {
+        background-color: getColor(color04);
+        padding-bottom: 1rem;
+        padding: 0.5rem;
+
+        div {
+            p {
+            text-align: center;
+            padding-top: 1.3rem;
+            font-size: 1.3rem;
+            }
+        }
+        .card-wrap {
+            display:grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 2rem auto;
+            width: 25rem;      
+            .card {
+            margin-top: 4rem;
+            border: 1px solid getColor(color05);
+            background-color: getColor(color05);
+            width: 25rem;
+            margin: 0.4rem;
+            text-align: center;
+            font-size: 1rem;
+            padding:4rem;
+            }
+        }
+    }
+}
+.section-three {
+    background-color: rgb(166, 156, 156);
+    .container {
+        .row {
+            div {
+                background: url(../media/platters.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;                
+                background-position: center;
+                border: none;
+                color: getColor(color05);
+                padding-bottom: 0.5rem;
+                background-attachment: fixed;
+                position: relative;
+
+                .contact-wrap {
+                    padding-left: 1.5rem;
+                    padding-bottom: 0.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .contact-heading {
+                        padding-top: 5rem;
+                        font-size: 2rem;
+                        color: getColor(color05);
+                    }
+                    .address {
+                        font-size: 1.2rem;
+                        margin-top: 0.5rem;
+                        padding-bottom: 0.3rem;
+                        color: getColor(color02);
+                    }
+                    a {
+                        background-color: getColor(color01);
+                        padding:0.4rem;
+                        margin: 1rem auto;
+                        width: 6rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+                        color: getColor(color06);
+                    }
+                }
+            }
+        }
+    }
+}

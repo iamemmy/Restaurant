@@ -17,7 +17,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        P {
+        p {
             font-size: 30px;
             color: getColor(color02);
             @include screen4 {
