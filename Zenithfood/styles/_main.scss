@@ -1,0 +1,283 @@
+#main-container {
+    width: 100vw;
+    height: fit-content;
+    background-image: url(../media/fried-wings-plate-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 8rem 3em;
+
+    position: relative;
+    .nav {
+        width: 100%;
+        position: absolute;
+        top: 6%;
+        left: 0;
+        padding-inline: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        P {
+            font-size: 30px;
+            color: getColor(color02);
+            @include screen4 {
+                font-size: 26px;
+            }
+            span {
+                color: getColor(color06);
+                @include screen4 {
+                    font-size: 26px;
+                }
+            }
+        }
+        ul {
+            display: flex;
+            gap: 15px;
+            @include screen5 {
+                // display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 220%;
+                // left: 50%;
+                left: -100%;
+                transform: translate(-50%, 0%);
+                border: 0.1rem solid getColor(color02);
+                border-radius: 2px;
+                padding: 8rem 7rem;
+                background: rgb(0, 0, 0, 0.9);
+                gap: 30px;
+                transition: all .5s ease;
+                z-index: 2;
+
+            }
+            li {
+                list-style: none;
+                color: getColor(color02);
+                border-bottom: 0.1rem solid transparent;
+                cursor: pointer;
+                @include screen5{
+                    text-align: center;
+                    font-size: 22px;
+                }
+                &:hover {
+                    border-bottom: 0.1rem solid getColor(color02);
+                    transition: .5s;
+                }
+            }
+        }
+        i {
+            display: none;
+            cursor: pointer;
+            color: getColor(color02);
+            font-size: 30px;
+            padding: 0.6rem;
+            @include screen5 {
+                display: block;
+            }
+        }
+    }
+    .main-content {
+        padding-top: 5rem;
+        display: grid;
+        align-items: center;
+        justify-content: left;
+        @include screen0 {
+            padding-top: 4rem;
+        }
+        @include screen1 {
+            padding-top: 3.8rem;
+        }
+        @include screen2 {
+            padding-top: 3.6rem;
+        }
+        @include screen4 {
+            padding-top: 4rem;
+        }
+        @include screen5 {
+            padding-top: 3rem;
+        }
+        h1 {
+            font-size: 80px;
+            color: getColor(color02);
+            width: 60%;
+            margin-bottom: 2rem;
+            @include screen0 {
+                font-size: 70px;
+                margin-bottom: 1.6rem;
+            }
+            @include screen1 {
+                font-size: 60px;
+                margin-bottom: 1.8rem;
+            }
+            @include screen2 {
+                font-size: 55px;
+                margin-bottom: 1.8rem;
+            }
+            @include screen4 {
+                font-size: 40px;
+                margin-bottom: 1.5rem;
+            }
+            @include screen5 {
+                width: 100%;
+                font-size: 40px;
+                margin-bottom: 3rem;
+            }
+        }
+        p {
+            font-size: 25px;
+            color: getColor(color02);
+            width: 60%;
+            line-height: 40px;
+            @include screen0 {
+                font-size: 23px;
+                margin-bottom: 1.6rem;
+            }
+            @include screen1 {
+                font-size: 22px;
+                margin-bottom: 1.5rem;
+            }
+            @include screen2 {
+                font-size: 20px;
+                margin-bottom: 1.4rem;
+            }
+            @include screen4 {
+                font-size: 19px;
+                margin-bottom: 1.2rem;
+            }
+            @include screen5 {
+                width: 100%;
+                font-size: 18px;
+                margin-bottom: 3rem;
+            }
+        }
+        div {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            @include screen5 {
+                justify-content: center;
+            }
+            a {
+                text-decoration: none;
+                border: none;
+                color: getColor(color01);
+                background-image: linear-gradient(30deg, #ffe600, #ecf74c);
+                border-radius: 50px;
+                background-size: 100% auto;
+                font-family: inherit;
+                font-size: 28px;
+                padding: 1rem 2.5rem;
+                @include screen2 {
+                    font-size: 20px;
+                }
+                @include screen5 {
+                    font-size: 22px;
+                }
+                @include screen6 {
+                    font-size: 18px;
+                }
+                &:hover {
+                    background-position: right center;
+                    background-size: 200% auto;
+                    -webkit-animation: pulse 2s infinite;
+                    animation: pulse512 1.5s infinite;
+                }
+            }
+        }
+    }
+}
+#next-text {
+    width: 100vw;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    padding: 5rem 3rem;
+    gap: 1rem;
+    @include screen4 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    h3 {
+        font-size: 55px;
+        text-align: left;
+        @include screen2 {
+            font-size: 48px;
+        }
+        @include screen6 {
+            font-size: 36px;
+        }
+    }
+    article {
+        display: grid;
+        gap: 1rem;
+        p {
+            font-size: 24px;
+            @include screen2 {
+                font-size: 22px;
+            }
+            @include screen6 {
+                font-size: 18px;
+            }
+        }
+    }
+}
+#services {
+    width: 100vw;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 1rem;
+    padding: 5rem 3rem;
+    @include screen4 {
+        gap: 1.8rem;
+    }
+    @include screen5 {
+        grid-template-columns: 1fr;
+    }
+    .service-1 {
+        border: none;
+        img {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+    }
+    .service-2 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        @include screen5 {
+            justify-content: left;
+            align-items: center;
+            gap: 1rem;
+        }
+        h3 {
+            font-size: 40px;
+            @include screen3 {
+                font-size: 36px;
+                margin-bottom: 1rem;
+            }
+            @include screen4 {
+                margin-bottom: 1rem;
+                font-size: 32px;
+            }
+        }
+        p {
+            font-size: 24px;
+            @include screen3 {
+                font-size: 22px;
+            }
+            @include screen4 {
+                font-size: 18px;
+            }
+            span {
+                font-weight: bold;
+                padding-right: 5px;
+            }
+        }
+    }
+}

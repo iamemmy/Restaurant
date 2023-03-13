@@ -1,0 +1,98 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Rubik:ital,wght@0,300;0,400;1,300&display=swap');
+
+// General
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    user-select: none;
+    // outline: 1px solid yellow;
+}
+
+body {
+    background-color: getColor(color01);
+}
+
+//Variable
+$colors:(
+    color01: #000000,
+    color02: #FFFFFF,
+    color03: #256975,
+    color04: #90E0EF,
+    color05: #EEF1FF,
+    color06: #f1ee0e
+);
+
+// Function
+@function getColor($key){
+    @return map-get($colors, $key);
+}
+
+// Mixin
+@mixin screen0{
+    @media (max-width: 1115.1px){
+        @content;
+    }
+}
+@mixin screen1{
+    @media (max-width: 1051.1px){
+        @content;
+    }
+}
+@mixin screen2{
+    @media (max-width: 972.1px){
+        @content;
+    }
+}
+@mixin screen3{
+    @media (max-width: 939.1px){
+        @content;
+    }
+}
+@mixin screen4{
+    @media (max-width: 797.1px){
+        @content;
+    }
+}
+@mixin screen5{
+    @media (max-width: 577.1px){
+        @content;
+    }
+}
+@mixin screen6{
+    @media (max-width: 455.1px){
+        @content;
+    }
+}
+@mixin screen7{
+    @media (max-width: 391.1px){
+        @content;
+    }
+}
+
+//Keyframes
+// @keyframes fade-up {
+//     0% {
+//         opacity: 0;
+//         transform: translateY(30px) scale(0.9);
+//     }
+//     100% {
+//         opacity: 1;
+//         transform: translateY(0) scale(1);
+//     }
+// }
+@keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #dad60566;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
