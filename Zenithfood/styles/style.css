@@ -45,20 +45,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-#main-container .nav P {
+#main-container .nav p {
   font-size: 30px;
   color: #FFFFFF;
 }
 @media (max-width: 797.1px) {
-  #main-container .nav P {
+  #main-container .nav p {
     font-size: 26px;
   }
 }
-#main-container .nav P span {
+#main-container .nav p span {
   color: #f1ee0e;
 }
 @media (max-width: 797.1px) {
-  #main-container .nav P span {
+  #main-container .nav p span {
     font-size: 26px;
   }
 }
@@ -375,4 +375,92 @@ body {
 #services .service-2 p span {
   font-weight: bold;
   padding-right: 5px;
+}
+
+.section-one {
+  background-color: #000000;
+}
+.section-one div div .bg-img-1 {
+  background: url(../media/Shrimp-meal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 0.1rem solid;
+  padding-bottom: 1.8rem;
+}
+.section-one div div .bg-img-1 article .intro {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  padding: 4rem;
+  text-align: center;
+}
+
+.section-two div {
+  background-color: #90E0EF;
+  padding-bottom: 1rem;
+  padding: 0.5rem;
+}
+.section-two div div p {
+  text-align: center;
+  padding-top: 1.3rem;
+  font-size: 1.3rem;
+}
+.section-two div .card-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.section-two div .card-wrap .card {
+  margin-top: 4rem;
+  border: 1px solid #EEF1FF;
+  background-color: #EEF1FF;
+  width: auto;
+  margin: 0.4rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 4rem;
+}
+
+.section-three {
+  background-color: rgb(166, 156, 156);
+}
+.section-three .container .row div {
+  background: url(../media/platters.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  color: #EEF1FF;
+  padding-bottom: 0.5rem;
+  background-attachment: fixed;
+  position: relative;
+}
+.section-three .container .row div .contact-wrap {
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-three .container .row div .contact-wrap .contact-heading {
+  padding-top: 5rem;
+  font-size: 2rem;
+  color: #EEF1FF;
+}
+.section-three .container .row div .contact-wrap .address {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.3rem;
+  color: #FFFFFF;
+}
+.section-three .container .row div .contact-wrap a {
+  background-color: #000000;
+  padding: 0.4rem;
+  margin: 1rem auto;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #f1ee0e;
 }/*# sourceMappingURL=style.css.map */
