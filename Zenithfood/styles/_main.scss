@@ -1,7 +1,7 @@
 #main-container {
     width: 100vw;
     height: fit-content;
-    background-image: url(../media/fried-wings-plate-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9) ), url("../media/grilled-chicken.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -19,6 +19,7 @@
         align-items: center;
         p {
             font-size: 30px;
+            font-style: italic;
             color: getColor(color02);
             @include screen4 {
                 font-size: 26px;
@@ -161,8 +162,8 @@
             a {
                 text-decoration: none;
                 border: none;
-                color: getColor(color01);
-                background-image: linear-gradient(30deg, #ffe600, #ecf74c);
+                color: getColor(color02);
+                background-image: linear-gradient(30deg, #b705bd, #ee59f3);
                 border-radius: 50px;
                 background-size: 100% auto;
                 font-family: inherit;
@@ -199,6 +200,9 @@
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+    @include screen5 {
+        padding: 3rem 1.5rem;
+    }
 
     h3 {
         font-size: 55px;
@@ -225,6 +229,11 @@
     }
 }
 #services {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='500' preserveAspectRatio='none' viewBox='0 0 1440 500'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1023%26quot%3b)' fill='none'%3e%3crect width='1440' height='500' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M4 500L504 0L757.5 0L257.5 500z' fill='url(%23SvgjsLinearGradient1024)'%3e%3c/path%3e%3cpath d='M352.8 500L852.8 0L1284.8 0L784.8 500z' fill='url(%23SvgjsLinearGradient1024)'%3e%3c/path%3e%3cpath d='M679.6 500L1179.6 0L1461.6 0L961.6 500z' fill='url(%23SvgjsLinearGradient1024)'%3e%3c/path%3e%3cpath d='M1433 500L933 0L712.5 0L1212.5 500z' fill='url(%23SvgjsLinearGradient1025)'%3e%3c/path%3e%3cpath d='M1067.2 500L567.2 0L165.20000000000005 0L665.2 500z' fill='url(%23SvgjsLinearGradient1025)'%3e%3c/path%3e%3cpath d='M760.4 500L260.4 0L129.89999999999998 0L629.9 500z' fill='url(%23SvgjsLinearGradient1025)'%3e%3c/path%3e%3cpath d='M1102.3453238323373 500L1440 162.34532383233721L1440 500z' fill='url(%23SvgjsLinearGradient1024)'%3e%3c/path%3e%3cpath d='M0 500L337.6546761676628 500L 0 162.34532383233721z' fill='url(%23SvgjsLinearGradient1025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1023'%3e%3crect width='1440' height='500' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1024'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1025'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: getColor(color02);
     width: 100vw;
     min-height: 50vh;
     display: grid;
@@ -237,6 +246,7 @@
     }
     @include screen5 {
         grid-template-columns: 1fr;
+        padding: 3rem 1.5rem;
     }
     .service-1 {
         border: none;

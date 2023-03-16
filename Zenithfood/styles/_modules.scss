@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Edu NSW ACT Foundation', cursive;
     user-select: none;
     // outline: 1px solid yellow;
 }
@@ -22,7 +22,7 @@ $colors:(
     color03: #256975,
     color04: #90E0EF,
     color05: #EEF1FF,
-    color06: #f1ee0e
+    color06: #e90ef1
 );
 
 // Function
@@ -85,7 +85,7 @@ $colors:(
 // }
 @keyframes pulse512 {
     0% {
-     box-shadow: 0 0 0 0 #dad60566;
+     box-shadow: 0 0 0 0 #99089e;
     }
    
     70% {
